@@ -3,7 +3,7 @@ nixPkgs = ['bun']
 aptPkgs = ['build-essential']
 
 [phases.install]
-cmds = ['bun install --ignore-scripts']
+cmds = ['bun install --ignore-scripts --frozen-lockfile']
 
 [phases.build]
 cmds = ['bun run build']
