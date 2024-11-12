@@ -6,6 +6,6 @@ COPY . .
 
 RUN bun install && bun run build
 
-EXPOSE 5173
+EXPOSE 3000
 
 CMD ["bun", "start"]
